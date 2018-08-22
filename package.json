@@ -1,0 +1,20 @@
+{
+    "name": "airwallex-api-codetest",
+    "version": "1.0.0",
+    "description": "AirWallex API Code Challenge",
+    "author": "Shiva Vuppala",
+    "dependencies": {
+        "chai": "^3.5.0",
+        "mocha": "^3.2.0",
+        "mocha-jenkins-reporter": "^0.3.7",
+        "supertest": "^3.0.0"
+    },
+    "scripts": {
+        "prestart": "npm install;",
+        "start": "JUNIT_REPORT_PATH=test-result/result.xml JUNIT_REPORT_STACK=1 mocha --timeout 25000 --colors --reporter mocha-jenkins-reporter || true"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:shivavuppala/airwallex-api-codetest.git"
+    }
+}
